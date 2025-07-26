@@ -1,6 +1,6 @@
 import pytest
 
-
+@pytest.mark.smoke
 @pytest.mark.usefixtures("data")
 class TestData:
     def test_data_fixture(self,data):
